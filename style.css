@@ -20,16 +20,21 @@ h1 {
     justify-content: center; 
     gap: 10px;
     position: relative;
+    font-size: 1em;
     }
 
 h1 img {
     width: 40px;
     height: auto;
     margin-right: auto;
-}    
+}  
 
-ul {
-    font-size: 1em;
+h1 span {
+    position: absolute;
+}
+
+nav {
+    background-color: ;
 }
 
 footer {
