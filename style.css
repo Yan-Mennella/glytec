@@ -14,27 +14,19 @@ h1 {
     text-align: center;
     background-color: rgba(21, 124, 67, 0.578);
     margin: 0;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     gap: 10px;
     }
 
-    nav {
-    padding-top: 15px;
-    margin-left: 15px;
-    width: 80%;
-}
-
-nav img {
-    width: 60px;
-    height: auto;
-    display: block;
-}
+h1 img {
+    
+}    
 
 ul {
-    margin: 15px;
+    font-size: 1em;
 }
 
 footer {
