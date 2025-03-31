@@ -34,7 +34,13 @@ h1 span {
 }
 
 nav {
-    background-color: ;
+    background-color: rgb(53, 53, 4);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    
 }
 
 footer {
