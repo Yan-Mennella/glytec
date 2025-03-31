@@ -5,9 +5,11 @@
     margin: 0;
     box-sizing: border-box; 
 }
+
 body {
     background-color: black;
 }
+
 h1 {
     text-align: center;
     background-color: rgba(21, 124, 67, 0.578);
@@ -18,21 +20,37 @@ h1 {
     justify-content: center; 
     gap: 10px;
     }
-nav {
+
+    nav {
     padding-top: 15px;
     margin-left: 15px;
     width: 80%;
 }
+
 nav img {
     width: 60px;
     height: auto;
     display: block;
 }
+
 ul {
     margin: 15px;
 }
+
 footer {
     background-color: rgb(53, 53, 4);
     text-align: center;
     margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
