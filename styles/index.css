@@ -19,6 +19,7 @@ header {
 .logo img {
     height: 50px;
     margin-right: 30px;
+    border-radius: 15px;
 }
 
 .menu {
@@ -35,4 +36,16 @@ header {
 
 .menu a:hover {
     color: #00d1ff;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user img {
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
