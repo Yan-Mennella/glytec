@@ -40,7 +40,27 @@ header {
     color: #00d1ff;
 }
 
-.main-conteiner {
+.sidebar {
+    height: 100%;
+    position: fixed;
+    background-color: #4c5c6d;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #00d1ff;
+}
+
+.info-user {
     max-width: 1200px;
     width: 100%;
     padding: 10px 30px;
@@ -58,10 +78,33 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 30px;
 }
 
 .user img {
     height: 60px;
+}
+
+.close-btn {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#show-sidebar-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0d1b2a;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .favoritos-conteiner {
@@ -91,7 +134,7 @@ header {
     border-radius: 8px;
     background-color: #ffffff;
     transition: all 0.3s ease;
-    width: 400px;
+    width: 350px;
 }
 
 .favoritos a img {
