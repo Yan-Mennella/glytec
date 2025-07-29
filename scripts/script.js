@@ -9,6 +9,6 @@ closeBtn.addEventListener('click', () => {
         isSidebarVisible = false;
     } else {
         sidebar.style.left = '0';
-        isSidebarVisible = 'true';
+        isSidebarVisible = true;
     }    
 });

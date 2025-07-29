@@ -41,6 +41,8 @@ header {
 }
 
 .sidebar {
+    left: 0;
+    width: 410px;
     height: 100%;
     position: fixed;
     background-color: #4c5c6d;
@@ -146,3 +148,28 @@ header {
     color: #00d1ff;
     cursor: pointer;
 }
+
+body {
+    background-color: beige;
+}
+
+.boas-vindas {
+    position: absolute;
+    top: 20px;
+    left: 440px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.boas-vindas h1 {
+    width: 50vw;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.boas-vindas p {
+    font-size: 1.2rem;
+}
+
+*/
