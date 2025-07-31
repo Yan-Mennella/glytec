@@ -5,66 +5,80 @@ file:///C:/Users/Usuario/gtc/pages/index.html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLYTEC</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLYTEC</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
-    <header>
-      <div class="nav-container">
-          <div class="logo">
-            <a href="#"><img src="assets/images/logo2.png" alt="logo"></a>
-          </div>
-          <nav class="menu">
-            <a href="#">Cadastros</a>
-            <a href="#">Vendas</a>
-            <a href="#">Estoque</a>
-            <a href="#">Financeiro</a>
-          </nav>
+  <!-- Cabeçalho do site (topo) -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#"><img src="assets/images/logo2.png" alt="Logo pequena GLYTEC" /></a>
       </div>
-    </header>
-
-    <div id="sidebar" class="sidebar">
-      <button id="close-btn" class="close-btn">x</button>
-      <div class="info-user">
-        <div class="user-conteiner">
-          <div class="user">
-            <img src="assets/images/user.png" alt="Foto do usuário">
-            <div class="user-text">
-              <h1>Usuário</h1>
-              <p>emaildousuario@email.com.br</p>
-            </div>
-          </div>
-          <div class="favoritos-conteiner">
-            <h1>Favoritos</h1>
-            <nav class="favoritos">
-              <a href="#"><img src="assets/images/favorite.png" alt="ícone de favoritos">Cadastros</a>
-              <a href="#"><img src="assets/images/favorite.png" alt="ícone de favoritos">Vendas</a>
-              <a href="#"><img src="assets/images/favorite.png" alt="ícone de favoritos">Estoque</a>
-              <a href="#"><img src="assets/images/favorite.png" alt="ícone de favoritos">Financeiro</a>
-            </nav>
-          </div>
-      </div>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#">Cadastros</a>
+        <a href="#">Vendas</a>
+        <a href="#">Estoque</a>
+        <a href="#">Financeiro</a>
+      </nav>
     </div>
-          <div class="logo-main">
-            <img src="assets/images/logo.png" alt="Logo da empresa">
+  </header>
+
+  <!-- Menu lateral com informações do usuário -->
+  <aside id="sidebar" class="sidebar">
+    <button id="close-btn" class="close-btn" aria-label="Fechar menu lateral">×</button>
+
+    <!-- Usuário -->
+    <section class="info-user" aria-labelledby="usuario-title">
+      <div class="user-conteiner">
+        <div class="user">
+          <img src="assets/images/user.png" alt="Foto do usuário" />
+          <div class="user-text">
+            <h2 id="usuario-title">Usuário</h2>
+            <p>emaildousuario@email.com.br</p>
           </div>
-
-    <main>
-      <div class="boas-vindas">
-        <h1>Seja muito bem vindo(a) ao Sistema GLYTEC!</h1>
-        <p>Simplicando a gestão da sua empresa</p>
+        </div>
       </div>
-      <div class="dashboard">
-        <a href="#"><img src="assets/images/dashboard.png" alt="dashboard ilustrativo"></a>
-      </div>
-    </main>
+    </section>
 
-    <script src="js/main.js"></script>
-    
+    <!-- Favoritos -->
+    <nav class="favoritos-conteiner" aria-label="Links favoritos">
+      <h2>Favoritos</h2>
+      <div class="favoritos">
+        <a href="#"><img src="assets/images/favorite.png" alt="">Cadastros</a>
+        <a href="#"><img src="assets/images/favorite.png" alt="">Vendas</a>
+        <a href="#"><img src="assets/images/favorite.png" alt="">Estoque</a>
+        <a href="#"><img src="assets/images/favorite.png" alt="">Financeiro</a>
+      </div>
+    </nav>
+
+    <!-- Logo centralizada embaixo -->
+    <div class="logo-main">
+      <img src="assets/images/logo.png" alt="Logo principal GLYTEC" />
+    </div>
+  </aside>
+
+  <!-- Conteúdo principal do sistema -->
+  <main>
+
+    <!-- Texto de boas-vindas -->
+    <section class="boas-vindas" aria-labelledby="bemvindo-titulo">
+      <h1 id="bemvindo-titulo">Seja muito bem vindo(a) ao Sistema GLYTEC!</h1>
+      <p>Simplificando a gestão da sua empresa</p>
+    </section>
+
+    <!-- Painel gráfico (dashboard) -->
+    <section class="dashboard" aria-label="Painel do sistema">
+      <img src="assets/images/dashboard.png" alt="Gráficos de vendas, estoque, financeiro, etc." />
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
