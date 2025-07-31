@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
+/* ==========================
+   RESET / BASE GERAL
+   ========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================
+   HEADER E MENU SUPERIOR
+   ========================== */
 header {
     background-color: #0d1b2a;
     padding: 10px 30px;
@@ -14,19 +20,21 @@ header {
 .nav-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1200px;
     width: 100%;
-    /*Oi*/
 }
 
 .logo img {
     height: 50px;
-    margin-right: 30px;
     border-radius: 15px;
 }
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
 }
 
 .menu a {
@@ -41,6 +49,9 @@ header {
     color: #00d1ff;
 }
 
+/* ==========================
+   SIDEBAR LATERAL
+   ========================== */
 .sidebar {
     left: 0;
     width: 410px;
@@ -99,6 +110,9 @@ header {
     cursor: pointer;
 }
 
+/* ==========================
+   BOTÃO MOSTRAR MENU (mobile futuro)
+   ========================== */
 #show-sidebar-btn {
     position: fixed;
     top: 20px;
@@ -110,13 +124,17 @@ header {
     cursor: pointer;
 }
 
+/* ==========================
+   FAVORITOS
+   ========================== */
 .favoritos-conteiner {
     margin-top: 5px;
 }
 
-.favoritos-conteiner h1 {
+.favoritos-conteiner h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .favoritos {
@@ -150,6 +168,9 @@ header {
     cursor: pointer;
 }
 
+/* ==========================
+   LOGO CENTRAL NA SIDEBAR
+   ========================== */
 .logo-main {
     margin-top: 100px;
     text-align: center;
@@ -160,11 +181,14 @@ header {
     border-radius: 50px;
 }
 
+/* ==========================
+   CONTEÚDO PRINCIPAL
+   ========================== */
 .boas-vindas {
     background-color: #cfd8dc;
     position: absolute;
-    top: 0px;
     left: 410px;
+    margin-bottom: 25px;
 }
 
 .boas-vindas h1 {
@@ -181,10 +205,16 @@ header {
     padding-bottom: 20px;
 }
 
-.dashboard img {
-    margin-top: -715px;
+.dashboard {
     margin-left: 410px;
+    padding: 20px;
+}
+
+.dashboard img {
+    width: 100%;
     max-width: 1180px;
+    height: auto;
+    display: block;
 }
 
 /*

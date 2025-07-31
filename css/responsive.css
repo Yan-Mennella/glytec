@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 /* ==========================
-   RESPONSIVIDADE
+   MEDIA QUERIES (Responsividade)
    ========================== */
 
-/* Tablets e telas médias (max-width: 1024px) */
+/* Tablets até 1024px */
 @media (max-width: 1024px) {
   .sidebar {
-    width: 250px; /* sidebar mais estreita */
+    width: 250px;
   }
 
   .boas-vindas {
@@ -18,21 +18,20 @@
 
   .boas-vindas h1,
   .boas-vindas p {
-    margin-left: 20px; /* tirar margens grandes */
+    margin-left: 20px;
     width: auto;
   }
 
-  .dashboard img {
+  .dashboard {
     margin-left: 250px;
-    max-width: calc(100vw - 250px);
-    margin-top: 20px;
+    padding: 20px;
   }
 }
 
-/* Tablets menores e celulares grandes (max-width: 768px) */
+/* Tablets menores e celulares maiores */
 @media (max-width: 768px) {
   .nav-container {
-    flex-direction: column; /* menu vertical */
+    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -68,10 +67,9 @@
     margin-left: 0;
   }
 
-  .dashboard img {
-    margin: 20px 0 0 0;
-    max-width: 100%;
-    height: auto;
+  .dashboard {
+    margin-left: 0;
+    padding: 20px;
   }
 
   .favoritos a {
@@ -79,7 +77,7 @@
   }
 }
 
-/* Celulares pequenos (max-width: 480px) */
+/* Celulares pequenos */
 @media (max-width: 480px) {
   .logo img {
     height: 40px;
