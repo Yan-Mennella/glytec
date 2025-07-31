@@ -186,23 +186,24 @@ header {
    ========================== */
 .boas-vindas {
     background-color: #cfd8dc;
-    position: absolute;
-    left: 410px;
+    padding: 0 30px;
+    margin-left: 410px;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .boas-vindas h1 {
     padding: 30px;
-    width: 100vw;
+    width: 100%;
     font-size: 1.8rem;
     margin-bottom: -10px;
-    margin-left: 350px;
+    margin-left: 0;
 }
 
 .boas-vindas p {
     font-size: 1.2rem;
-    margin-left: 540px;
-    padding-bottom: 20px;
+    margin-left: 0;
+    padding: 0 30px 20px 30px;
 }
 
 .dashboard {
@@ -211,7 +212,7 @@ header {
 }
 
 .dashboard img {
-    width: 100%;
+    width: 80%;
     max-width: 1180px;
     height: auto;
     display: block;
