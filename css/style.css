@@ -190,7 +190,7 @@ header {
     background-color: #cfd8dc;
     padding: 0 30px;
     margin-left: 410px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     position: relative;
 }
 
@@ -209,8 +209,8 @@ header {
 }
 
 .dashboard {
-    margin-left: 410px;
-    padding: 20px;
+    margin-left: 380px;
+    padding: 0px;
 }
 
 .dashboard img {
