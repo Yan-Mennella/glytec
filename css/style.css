@@ -1,221 +1,269 @@
 @charset "UTF-8";
 
-/* ==========================
-   RESET / BASE GERAL
-   ========================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* ==========================
+    RESET / BASE GERAL
+    ========================== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* ==========================
-   HEADER E MENU SUPERIOR
-   ========================== */
-header {
-    background-color: #0d1b2a;
-    padding: 10px 30px;
-}
+    /* ==========================
+    HEADER E MENU SUPERIOR
+    ========================== */
+    header {
+        background-color: #0d1b2a;
+        padding: 10px 30px;
+    }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-}
+    .nav-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+    }
 
-.logo img {
-    height: 50px;
-    border-radius: 15px;
-}
+    .logo img {
+        height: 50px;
+        border-radius: 15px;
+    }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
-}
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
 
-.menu a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    .menu a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
 
-.menu a:hover {
-    color: #00d1ff;
-}
+    .menu a:hover {
+        color: #00d1ff;
+    }
 
-/* ==========================
-   SIDEBAR LATERAL
-   ========================== */
-.sidebar {
-    left: 0;
-    width: 410px;
-    height: 100%;
-    position: absolute;
-    background-color: #4c5c6d;
-    transition: 0.3s;
-    z-index: 1000;
-}
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
-.sidebar a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
+    .dropbtn {
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 10px;
+        transition: color 0.3s;
+    }
 
-.sidebar a:hover {
-    color: #00d1ff;
-}
+    .dropbtn:hover {
+        color: #00d1ff;
+    }
 
-.info-user {
-    max-width: 1200px;
-    width: 100%;
-    padding: 10px 30px;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0d1b2a;
+        min-width: 180px;
+        border-radius: 6px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
 
-.user-conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 40px;
-}
+    .dropdown-content a {
+        color: #ffffff;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+    }
 
-.user {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
+    .dropdown-content a:hover {
+        background-color: #00d1ff;
+        color: #0d1b2a;
+    }
 
-.user img {
-    height: 60px;
-}
+    .show {
+        display: block;
+    }
 
-.close-btn {
-    font-size: 30px;
-    color: white;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    cursor: pointer;
-}
+    /* ==========================
+    SIDEBAR LATERAL
+    ========================== */
+    .sidebar {
+        left: 0;
+        width: 410px;
+        height: 100%;
+        position: absolute;
+        background-color: #4c5c6d;
+        transition: 0.3s;
+        
+    }
 
-/* ==========================
-   BOTÃO MOSTRAR MENU (mobile futuro)
-   ========================== */
-#show-sidebar-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #0d1b2a;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
+    .sidebar a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
 
-/* ==========================
-   FAVORITOS
-   ========================== */
-.favoritos-conteiner {
-    margin-top: 5px;
-}
+    .sidebar a:hover {
+        color: #00d1ff;
+    }
 
-.favoritos-conteiner h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: white;
-    padding-left: 10px;
-}
+    .info-user {
+        max-width: 1200px;
+        width: 100%;
+        padding: 10px 30px;
+    }
 
-.favoritos {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
+    .user-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 40px;
+    }
 
-.favoritos a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #000;
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 6px 10px;
-    border: 2px solid #0d1b2a;
-    border-radius: 8px;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
-    width: 350px;
-}
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
 
-.favoritos a img {
-    height: 18px;
-}
+    .user img {
+        height: 60px;
+    }
 
-.favoritos a:hover {
-    background-color: #0d1b2a;
-    color: #00d1ff;
-    cursor: pointer;
-}
+    .close-btn {
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        cursor: pointer;
+    }
 
-/* ==========================
-   LOGO CENTRAL NA SIDEBAR
-   ========================== */
-.logo-main {
-    margin-top: 100px;
-    text-align: center;
-}
+    /* ==========================
+    BOTÃO MOSTRAR MENU (mobile futuro)
+    ========================== */
+    #show-sidebar-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #0d1b2a;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
 
-.logo-main img {
-    max-width: 300px;
-    border-radius: 50px;
-}
+    /* ==========================
+    FAVORITOS
+    ========================== */
+    .favoritos-conteiner {
+        margin-top: 5px;
+    }
 
-/* ==========================
-   CONTEÚDO PRINCIPAL
-   ========================== */
-.boas-vindas {
-    background-color: #cfd8dc;
-    padding: 0 30px;
-    margin-left: 410px;
-    margin-bottom: 0px;
-    position: relative;
-}
+    .favoritos-conteiner h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+        padding-left: 10px;
+    }
 
-.boas-vindas h1 {
-    padding: 30px;
-    width: 100%;
-    font-size: 1.8rem;
-    margin-bottom: -10px;
-    margin-left: 0;
-}
+    .favoritos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 
-.boas-vindas p {
-    font-size: 1.2rem;
-    margin-left: 0;
-    padding: 0 30px 20px 30px;
-}
+    .favoritos a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 6px 10px;
+        border: 2px solid #0d1b2a;
+        border-radius: 8px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        width: 350px;
+    }
 
-.dashboard {
-    margin-left: 380px;
-    padding: 0px;
-}
+    .favoritos a img {
+        height: 18px;
+    }
 
-.dashboard img {
-    width: 80%;
-    max-width: 1180px;
-    height: auto;
-    display: block;
-}
+    .favoritos a:hover {
+        background-color: #0d1b2a;
+        color: #00d1ff;
+        cursor: pointer;
+    }
+
+    /* ==========================
+    LOGO CENTRAL NA SIDEBAR
+    ========================== */
+    .logo-main {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .logo-main img {
+        max-width: 300px;
+        border-radius: 50px;
+    }
+
+    /* ==========================
+    CONTEÚDO PRINCIPAL
+    ========================== */
+    .boas-vindas {
+        background-color: #cfd8dc;
+        padding: 0 30px;
+        margin-left: 410px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    .boas-vindas h1 {
+        padding: 30px;
+        width: 100%;
+        font-size: 1.8rem;
+        margin-bottom: -10px;
+        margin-left: 0;
+    }
+
+    .boas-vindas p {
+        font-size: 1.2rem;
+        margin-left: 0;
+        padding: 0 30px 20px 30px;
+    }
+
+    .dashboard {
+        margin-left: 380px;
+        padding: 0px;
+    }
+
+    .dashboard img {
+        width: 80%;
+        max-width: 1180px;
+        height: auto;
+        display: block;
+    }
