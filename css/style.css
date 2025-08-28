@@ -234,31 +234,42 @@
     /* ==========================
     CONTEÚDO PRINCIPAL
     ========================== */
-    .boas-vindas {
-        background-color: #cfd8dc;
-        padding: 0 30px;
-        margin-left: 410px;
-        margin-bottom: 0px;
-        position: relative;
+    .main-content {
+        margin-left: 380px; /* Sidebar aberta */
+        transition: margin-left 0.3s ease;
+        padding: 20px;
+        padding-top: 0px;
+        padding-right: 0px;
     }
 
-    .boas-vindas h1 {
-        padding: 30px;
-        width: 100%;
-        font-size: 1.8rem;
-        margin-bottom: -10px;
+    /* Quando a sidebar estiver fechada */
+    .sidebar-closed .main-content {
         margin-left: 0;
+    }
+
+    /* Boas-vindas sem margin-left */
+    .boas-vindas {
+        background-color: #cfd8dc;
+        padding: 20px;         /* espaçamento uniforme */
+        margin: 0;             /* zera margens */
+}
+
+    .boas-vindas h1 {
+        font-size: 1.8rem;
+        margin: 0 0 10px 0;    /* só espaçamento inferior */
+        padding: 0;            /* sem padding extra */
     }
 
     .boas-vindas p {
         font-size: 1.2rem;
-        margin-left: 0;
-        padding: 0 30px 20px 30px;
+        margin: 0;             /* remove espaçamentos estranhos */
+        padding: 0;
     }
 
+
+    /* Dashboard sem margin-left */
     .dashboard {
-        margin-left: 380px;
-        padding: 0px;
+        padding: 0;
     }
 
     .dashboard img {

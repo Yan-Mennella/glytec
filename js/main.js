@@ -1,15 +1,18 @@
 // Esconde e mostra a sidebar
 const sidebar = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-btn');
+const mainContent = document.querySelector('.main-content');
 
 let isSidebarVisible = true;
 
 closeBtn.addEventListener('click', () => {
     if (isSidebarVisible) {
         sidebar.style.left = '-380px';
+        mainContent.style.marginLeft = '0';   // recua o conteúdo
         isSidebarVisible = false;
     } else {
         sidebar.style.left = '0';
+        mainContent.style.marginLeft = '380px'; // volta espaço do menu
         isSidebarVisible = true;
     }    
 });
